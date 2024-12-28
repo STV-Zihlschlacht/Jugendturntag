@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kantonaler TKB-Jugiturntag - Offizielle Seite für Anmeldung, Ranglisten und Sponsoren">
+    <meta name="keywords" content="TKB-Jugiturntag, Anmeldung, Rangliste, Sponsoren, Zihlschlacht, Turnen">
+    <meta name="author" content="Kantonaler TKB-Jugiturntag Team">
+    <title>Kantonaler TKB-Jugiturntag</title>
+
+    <!-- Open Graph Meta Tags for social media sharing -->
+    <meta property="og:title" content="Kantonaler TKB-Jugiturntag">
+    <meta property="og:description" content="Die offizielle Seite des Kantonalen TKB-Jugiturntags. Hier findest du Informationen zur Anmeldung, Ranglisten und Sponsoren.">
+    <meta property="og:image" content="path/to/social-image.jpg">
+    <meta property="og:url" content="https://www.deinedomain.com">
+    
+    <!-- Twitter Card Meta Tags for better sharing on Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kantonaler TKB-Jugiturntag">
+    <meta name="twitter:description" content="Die offizielle Seite des Kantonalen TKB-Jugiturntags. Hier findest du Informationen zur Anmeldung, Ranglisten und Sponsoren.">
+    <meta name="twitter:image" content="path/to/social-image.jpg">
+    
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Schwarzer Hintergrund */
+            color: #FFD700; /* Gelbe Schrift */
+        }
+
+        .header {
+            background-color: #FFD700; /* Gelb */
+            color: #000; /* Schwarz */
+            padding: 20px;
+            text-align: center;
+            position: relative; /* Relativ für absolute Positionierung von Logos */
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap; /* Ermöglicht Zeilenumbruch bei kleinen Bildschirmen */
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: #333; /* Dunkles Schwarz */
+            padding: 15px;
+            height: 100vh;
+            box-sizing: border-box; /* Padding wird in die Breite einbezogen */
+        }
+
+        .sidebar a {
+            display: block;
+            color: #FFD700;
+            text-decoration: none;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #FFD700;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .sidebar a:hover {
+            background-color: #FFD700;
+            color: #000;
+        }
+
+        .content {
+            width: 80%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .logo img {
+            max-width: 100%;
+            height: 40px; /* Höhe an die Breite des gelben Balkens angepasst */
+        }
+
+        .logo1 {
+            position: absolute;
+            top: 140px; /* Direkt unter dem Titel */
+            right: 20px; /* Ganz rechts ausgerichtet */
+            max-width: 200px;
+        }
+
+        .logo2 {
+            position: absolute;
+            top: 50%;
+            left: 20px; /* linke Seite */
+            transform: translateY(-50%);
+            max-width: 170px;
+        }
+
+        .footer {
+            background-color: #FFD700;
+            color: #000;
+            text-align: center;
+            padding: 10px;
+            position: relative; /* Footer bleibt am unteren Rand */
+            width: 100%;
+        }
+
+        .sponsors {
+            background-color: #222;
+            color: #FFD700;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .sponsors h3 {
+            margin-top: 0;
+        }
+
+        .sponsors h4 {
+            font-size: 1.2em;
+            margin-top: 20px;
+            text-decoration: underline;
+        }
+
+        .sponsors ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px; /* Abstand zwischen Logos */
+        }
+
+        .sponsors ul li {
+            margin: 5px 0;
+        }
+
+        .sponsors ul li img {
+            max-width: 300px; /* Größere Bilder für die Hauptsponsoren */
+            height: auto;
+        }
+
+        /* Hauptsponsoren */
+        .main-sponsors {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 60px; /* Abstand zwischen den Hauptsponsoren */
+            margin-bottom: 20px;
+        }
+
+        .main-sponsors li img {
+            max-width: 200px;  /* Größere Bilder für die Hauptsponsoren */
+            height: auto;
+        }
+
+        /* Optional: Helligkeit für Hauptsponsoren erhöhen */
+        .main-sponsors img {
+            filter: brightness(1.2); /* Helligkeit der Hauptsponsoren erhöhen */
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                height: auto;
+            }
+
+            .content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header" role="banner">
+        <h1>Kantonaler TKB-Jugiturntag</h1>
+        <img src="logo2.png" alt="Logo von STV Zihlschlacht" class="logo2">
+        <img src="logo.png" alt="TKB-Jugiturntag Logo" class="logo1">
+    </header>
+
+    <div class="container">
+        <nav class="sidebar" role="navigation">
+            <a href="#anmeldung" aria-label="Link zur Anmeldung">Anmeldung</a>
+            <a href="#infos" aria-label="Link zu allgemeinen Informationen">Allg. Infos</a>
+            <a href="#rangliste" aria-label="Link zur Rangliste">Rangliste</a>
+        </nav>
+
+        <main class="content" role="main">
+            <section id="anmeldung" aria-labelledby="anmeldung">
+                <h2>Anmeldung</h2>
+                <p>Hier können Sie sich für den Kantonalen TKB-Jugiturntag anmelden. 
+				<p>Besuchen Sie <a href="https://www.tgtv.ch/anlaesse/anlaesse.html/44/event/10244/eventdate/11158" target="_blank" rel="noopener noreferrer">diesem Link</a> für mehr Informationen und zur Anmeldung.</p>
+            </section>
+
+            <section id="infos" aria-labelledby="infos">
+                <h2>Allgemeine Infos</h2>
+                <p>Hier finden Sie allgemeine Informationen über den Kantonalen TKB-Jugiturntag.</p>
+            </section>
+
+            <section id="rangliste" aria-labelledby="rangliste">
+				<h2>Rangliste</h2>
+				<p>Die Ranglisten werden nach dem Event hier veröffentlicht. Du kannst sie hier herunterladen:</p>
+				<a href="path/to/rangliste.pdf" target="_blank" rel="noopener noreferrer" aria-label="Rangliste als PDF herunterladen">Rangliste herunterladen (PDF)</a>
+			</section>
+        </main>
+    </div>
+
+    <div class="sponsors" role="contentinfo">
+        <h3>Sponsoren</h3>
+        
+        <!-- Hauptsponsoren -->
+        <h4>Hauptsponsoren</h4>
+        <ul class="main-sponsors" aria-labelledby="hauptsponsoren">
+            <li><img src="hauptsponsor1.png" alt="Logo Hauptsponsor 1"></li>
+            <li><img src="hauptsponsor2.png" alt="Logo Hauptsponsor 2"></li>
+        </ul>
+
+        <!-- Weitere Sponsoren -->
+        <h4>Weitere Sponsoren</h4>
+        <ul aria-labelledby="weitere-sponsoren">
+            <li><img src="sponsor1.png" alt="Logo Sponsor 1"></li>
+            <li><img src="sponsor2.png" alt="Logo Sponsor 2"></li>
+            <li><img src="sponsor3.png" alt="Logo Sponsor 3"></li>
+            <li><img src="sponsor4.png" alt="Logo Sponsor 4"></li>
+        </ul>
+    </div>
+
+    <footer class="footer" role="contentinfo">
+        <p>&copy; 2025 Kantonaler TKB-Jugiturntag</p>
+    </footer>
+
+    <!-- Verbesserung der Barrierefreiheit durch Skip-Links -->
+    <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
+</body>
+</html>
